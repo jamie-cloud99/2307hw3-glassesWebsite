@@ -39,7 +39,7 @@ export default {
         'index-bg-sm': 'url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true")',
         'index-bg-md': 'url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true")',
         'index-bg': 'url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true")',
-        'arrow-dropdown': 'url("@/assets/icons/arrow_drop_down_black.svg")'
+        'arrow-dropdown': 'url("../assets/icons/arrow_drop_down_black.svg")'
       },
       padding: {
         '74': '296px'

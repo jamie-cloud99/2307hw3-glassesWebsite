@@ -11,7 +11,7 @@
       </li>
       <li class="border border-dark" v-for="i in pages.totalPage" :key="'i' + i">
         <a @click.prevent
-          class="block  px-3 py-1.5 text-dark transition-all duration-300 hover:bg-[#F2F2F2] "
+          class="block px-3 py-1.5 h-full text-dark transition-all duration-300 hover:bg-[#F2F2F2] "
           href="#" :class="{'link-active': i === pages.curPage}"
           >{{ i }}</a
         >

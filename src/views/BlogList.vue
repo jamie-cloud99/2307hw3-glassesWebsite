@@ -6,7 +6,7 @@
         部落格
       </h1>
       <ul class="space-y-6 mb-16 md:mb-20 xl:mb-[124px]">
-        <li v-for="item in blogList" :key="item.title">
+        <li v-for="item in blogList" :key="item.title" @click="$router.push('/blog/post')">
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
             <img :src="item.imgUrl" :alt="item.title" />
             <div class="flex flex-col justify-between">

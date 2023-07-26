@@ -52,7 +52,7 @@ export default {
         },
         {
           title: '門市據點',
-          url: '/map'
+          url: '/shops'
         },
         {
           title: '部落格',
