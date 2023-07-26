@@ -68,10 +68,10 @@
       </div>
     </div>
 
-    <div class="py-10 text-center md:py-20">
+    <div class="py-10 text-center sm:py-20">
       <div class="container">
         <h2 class="mb-6 text-xl font-bold text-apple-dark md:mb-12 md:text-3xl">顧客推薦</h2>
-        <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           <li
             v-for="item in reviews"
             :key="item.name"
