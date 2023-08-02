@@ -1,9 +1,9 @@
 <template>
   <div class="pb-16 pt-10 md:py-20">
     <div class="container">
-      <h1 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-8 md:text-3xl">
+      <h2 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-8 md:text-3xl">
         常見問題
-      </h1>
+      </h2>
       <h2 class="mb-6 text-xl font-bold">我想詢問配鏡問題</h2>
       <ol class="grid grid-cols-1 gap-x-6 gap-y-6 md:gap-y-8 xl:grid-cols-3">
         <li class="col-span-2" v-for="item in faqList" :key="item.question">

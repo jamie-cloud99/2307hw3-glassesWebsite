@@ -1,9 +1,9 @@
 <template>
   <div class="pb-16 pt-10 md:py-20">
     <div class="container">
-      <h1 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
+      <h2 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
         門市據點
-      </h1>
+      </h2>
       <label for="area" class="mr-2 md:mr-4 md:text-xl">選擇地區</label>
       <select
         name="area"
@@ -17,7 +17,7 @@
       <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-y-12">
         <li class="flex flex-col border border-black/20 cursor-pointer" v-for="item in shopList" :key="item.title" @click="$router.push('/shops/shop-detail')">
           <img class="block h-56 object-cover" :src="item.imgUrl" :alt="item.title" />
-          <h2 class="py-2 pl-6 text-xl border-b border-black/20">{{ item.title }}</h2>
+          <h3 class="py-2 pl-6 text-xl border-b border-black/20">{{ item.title }}</h3>
           <div class="py-4 px-6">
             <p class="text-lg"><span class="material-icons-outlined text-lg mr-2 align-bottom"> call </span>電話：{{ item.tel }}</p>
             <p class="text-lg"><span class="material-icons-outlined text-lg mr-2 align-bottom"> schedule </span>時間：{{ item.time }}</p>

@@ -4,7 +4,7 @@
       <li @click="changeCategory(item.category)"
         v-for="item in categoryList"
         :key="item.title"
-        class="w-1/3 border-0 py-4 font-medium transition-all duration-300 hover:border-b-8 hover:border-b-apple md:text-xl xl:py-6 xl:text-[32px]"
+        class="w-1/3 border-0 py-4 font-medium transition-all duration-300 hover:border-b-8 hover:border-b-apple md:text-xl xl:py-6 xl:text-[32px] "
         :class="{'category-active': item.category === tempCategory}"
       >
         {{ item.category }}
@@ -23,7 +23,7 @@
   <div class="pb-16 pt-10 md:py-20">
     <div class="container">
       <div class="text-center text-xl mb-6 md:mb-8">
-        <h1 class="font-medium md:text-[42px]">{{ tempCategoryProducts.categoryInfo.engTitle }}</h1>
+        <h2 class="font-medium md:text-[42px]">{{ tempCategoryProducts.categoryInfo.engTitle }}</h2>
       <h2 class="md:text-[32px]">{{ tempCategoryProducts.categoryInfo.title }}</h2>
       </div>
       <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-y-10 xl:gap-y-20 mb-16 md:mb-20">

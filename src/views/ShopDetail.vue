@@ -1,9 +1,9 @@
 <template>
   <div class="pb-16 pt-10 md:py-20">
     <div class="container">
-      <h1 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
+      <h2 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
         門市據點
-      </h1>
+      </h2>
       <label for="area" class="mr-2 md:mr-4 md:text-xl">選擇分店</label>
       <select
         name="area"
@@ -18,7 +18,7 @@
           <div class="h-full flex flex-col">
             <img class="block w-full h-56 object-cover" :src="shop.imgUrl" :alt="shop.title" />
             <div class="hidden border border-black/20 xl:block xl:w-full flex-grow">
-              <h2 class="border-b border-black/20 py-2 pl-6 text-xl">{{ shop.title }}</h2>
+              <h3 class="border-b border-black/20 py-2 pl-6 text-xl">{{ shop.title }}</h3>
               <div class="px-6 py-4 ">
                 <p class="text-lg">
                   <span class="material-icons-outlined mr-2 align-bottom text-lg"> call </span
@@ -38,7 +38,7 @@
         </div>
         <div class="md:col-span-6 xl:col-span-7">
           <div class="h-full border border-black/20 xl:hidden">
-            <h2 class="border-b border-black/20 py-2 pl-6 text-xl">{{ shop.title }}</h2>
+            <h3 class="border-b border-black/20 py-2 pl-6 text-xl">{{ shop.title }}</h3>
             <div class="px-6 py-4">
               <p class="text-lg">
                 <span class="material-icons-outlined mr-2 align-bottom text-lg"> call </span

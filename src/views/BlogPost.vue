@@ -12,8 +12,8 @@
       <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
         <div class="md:col-span-9 xl:col-span-8">
           <article class="md:mb-10">
-            <h1 class="text-xl md:text-3xl">情人特別企劃</h1>
-            <h2 class="mb-4 font-medium md:mb-6 md:text-xl xl:mb-4">2020 Valentine’s Special</h2>
+            <h2 class="text-xl md:text-3xl">情人特別企劃</h2>
+            <h3 class="mb-4 font-medium md:mb-6 md:text-xl xl:mb-4">2020 Valentine’s Special</h3>
             <img :src="imgUrls[0]" alt="情人特別企劃" class="mb-2 block md:mb-4 xl:mb-2" />
             <p class="mb-4 text-dark md:mb-6 xl:mb-10">
               一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。
@@ -58,17 +58,17 @@
             </p>
             <hr class="mb-6 border-light" />
             <nav class="flex justify-between">
-              <a href="#"
+              <RouterLink to="/" class="hover:text-apple"
                 ><span class="material-icons-outlined mr-3 align-bottom text-base">
                   arrow_back </span
-                >上一篇：街頭潮人訪問 1</a
+                >上一篇：街頭潮人訪問 1</RouterLink
               >
-              <a href="#"
+              <RouterLink to="/" class="hover:text-apple"
                 >下一篇：街頭潮人訪問 2<span
                   class="material-icons-outlined ml-3 align-bottom text-base"
                 >
                   arrow_forward
-                </span></a
+                </span></RouterLink
               >
             </nav>
           </div>
@@ -83,7 +83,7 @@
               >TAGS
             </h3>
             <ul class="flex flex-wrap gap-x-4 xl:gap-x-6 xl:gap-y-1 xl:text-xl">
-              <li class="" v-for="item in tags" :key="item">{{ item }}</li>
+              <li class="hover:text-apple/70 cursor-pointer" v-for="item in tags" :key="item">{{ item }}</li>
             </ul>
           </aside>
         </div>

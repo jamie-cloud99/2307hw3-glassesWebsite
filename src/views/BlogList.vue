@@ -2,16 +2,17 @@
   <BlogNavbar></BlogNavbar>
   <div class="pb-16 pt-10 md:py-20">
     <div class="container">
-      <h1 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
+      <h2 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
         部落格
-      </h1>
+      </h2>
       <ul class="space-y-6 mb-16 md:mb-20 xl:mb-[124px]">
-        <li v-for="item in blogList" :key="item.title" @click="$router.push('/blog/post')">
+        <li v-for="item in blogList" :key="item.title" @click="$router.push('/blog/post')" class="cursor-pointer">
+          
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
             <img :src="item.imgUrl" :alt="item.title" />
             <div class="flex flex-col justify-between">
               <div>
-                <h2 class="text-xl text-apple-dark xl:text-[32px]">{{ item.title }}</h2>
+                <h3 class="text-xl text-apple-dark xl:text-[32px]">{{ item.title }}</h3>
                 <div class="mb-0 flex items-center justify-between md:mb-1 xl:mb-4">
                   <h3 class="font-bold xl:text-lg">{{ item.subtitle }}</h3>
                   <p class="font-medium opacity-70">{{ item.date }}</p>
@@ -22,7 +23,7 @@
                 </p>
               </div>
 
-              <p class="hidden text-end text-2xl font-black text-apple-dark xl:block">more</p>
+              <p class="hidden text-end text-2xl font-black text-apple-dark xl:block hover:text-apple">more</p>
             </div>
           </div>
         </li>

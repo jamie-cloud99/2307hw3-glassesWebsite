@@ -2,10 +2,10 @@
   <div class="bg-home-bn-sm bg-cover bg-center py-36 md:py-74 xl:bg-home-bn">
     <div class="container">
       <div class="text-end">
-        <h1 class="mb-2 text-xl font-bold text-apple-dark md:mb-1 md:text-4xl">
+        <h2 class="mb-2 text-xl font-bold text-apple-dark md:mb-1 md:text-4xl">
           <span class="block text-base font-normal md:text-2xl">Promise-Desert 2020 早春系列</span>
           看得清，才能看得遠
-        </h1>
+        </h2>
         <button type="button" class="btn bg-apple text-white hover:bg-apple-dark">立即購買</button>
       </div>
     </div>
@@ -14,13 +14,13 @@
   <main>
     <div class="bg-apple-light py-10 text-center text-apple-dark md:py-20">
       <div class="container">
-        <h2 class="text-xl font-bold md:text-3xl">用專業的心，做專業的事</h2>
+        <h3 class="text-xl font-bold md:text-3xl">用專業的心，做專業的事</h3>
         <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
           <li class="py-6" v-for="item in features" :key="item.title">
             <p>
               <span class="material-icons-outlined mb-4 text-9xl">{{ item.icon }}</span>
             </p>
-            <h3 class="mb-2 text-xl font-bold">{{ item.title }}</h3>
+            <h4 class="mb-2 text-xl font-bold">{{ item.title }}</h4>
             <p class="text-start text-black">{{ item.description }}</p>
           </li>
         </ul>
@@ -29,7 +29,7 @@
 
     <div class="py-10 text-center text-apple-dark md:py-20">
       <div class="container">
-        <h2 class="mb-6 text-xl font-bold md:mb-12 md:text-3xl">經典系列鏡框</h2>
+        <h3 class="mb-6 text-xl font-bold md:mb-12 md:text-3xl">經典系列鏡框</h3>
         <ul class="grid grid-cols-1 gap-6 xl:grid-cols-3">
           <li v-for="item in productsCategories" :key="item.title">
             <a href="#" class="block">
@@ -38,7 +38,7 @@
                 :src="item.imgUrl"
                 :alt="item.title"
               />
-              <h3 class="text-3xl font-black italic text-apple">{{ item.title }}</h3>
+              <h4 class="text-3xl font-black italic text-apple">{{ item.title }}</h4>
             </a>
           </li>
         </ul>
@@ -49,7 +49,7 @@
       class="xl:bg-index-lg bg-index-bg-sm bg-cover bg-center py-10 text-center md:bg-index-bg-md md:py-20"
     >
       <div class="container">
-        <h2 class="mb-6 text-xl font-bold text-white md:mb-12 md:text-3xl">聯名設計鏡框</h2>
+        <h3 class="mb-6 text-xl font-bold text-white md:mb-12 md:text-3xl">聯名設計鏡框</h3>
         <ul class="grid grid-cols-1 gap-y-6 xl:grid-cols-2">
           <li v-for="item in coBrandings" :key="item.title">
             <a href="#" class="block">
@@ -61,7 +61,11 @@
                 />
                 <img class="max-h-60 w-full object-cover" :src="item.imgUrlSm" :alt="item.title" />
               </picture>
-              <h3 class="bg-white py-2 text-3xl font-black italic text-apple">{{ item.title }}</h3>
+              <h4
+                class="bg-white py-2 text-3xl font-black italic text-apple transition duration-300 hover:text-apple-dark"
+              >
+                {{ item.title }}
+              </h4>
             </a>
           </li>
         </ul>
@@ -70,7 +74,7 @@
 
     <div class="py-10 text-center sm:py-20">
       <div class="container">
-        <h2 class="mb-6 text-xl font-bold text-apple-dark md:mb-12 md:text-3xl">顧客推薦</h2>
+        <h3 class="mb-6 text-xl font-bold text-apple-dark md:mb-12 md:text-3xl">顧客推薦</h3>
         <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
           <li
             v-for="item in reviews"
@@ -85,7 +89,7 @@
               />
             </div>
             <div class="mb-10 p-4">
-              <h3 class="mb-2 font-medium">{{ item.name }}</h3>
+              <h4 class="mb-2 font-medium">{{ item.name }}</h4>
               <p>{{ item.review }}</p>
             </div>
             <div class="p-4">
@@ -100,7 +104,7 @@
       <div class="container">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
           <div class="md:col-span-10 md:col-start-2 xl:col-span-6 xl:col-start-4">
-            <h2 class="mb-6 text-xl font-bold text-apple-dark md:text-3xl xl:mb-12">聯絡我們</h2>
+            <h3 class="mb-6 text-xl font-bold text-apple-dark md:text-3xl xl:mb-12">聯絡我們</h3>
             <p class="mb-6 xl:text-lg">
               我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
             </p>
@@ -109,7 +113,7 @@
               <div class="mb-4">
                 <label for="name" class="mb-2 block">姓名</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033]"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
                   type="text"
                   id="name"
                   placeholder="陳小明"
@@ -118,7 +122,7 @@
               <div class="mb-4">
                 <label for="phone" class="mb-2 block">聯絡電話</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033]"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
                   type="tel"
                   id="phone"
                   placeholder="0912-345-678"
@@ -127,7 +131,7 @@
               <div class="mb-4">
                 <label for="email" class="mb-2 block">電子郵件</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033]"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
                   type="email"
                   id="email"
                   placeholder="example@email.com"
@@ -136,7 +140,7 @@
               <div class="mb-4">
                 <label for="message" class="mb-2 block">意見反應</label>
                 <textarea
-                  class="form-textarea block h-[136px] w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033]"
+                  class="form-textarea block h-[136px] w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
                   type="text"
                   id="message"
                   placeholder="請輸入您的意見"
@@ -156,7 +160,7 @@
                 <div class="md:col-span-6 md:col-start-3 xl:col-span-4 xl:col-start-2">
                   <button
                     class="btn w-full bg-apple py-4 font-bold text-white hover:bg-apple-dark"
-                    type="button"
+                    type="submit"
                   >
                     確認送出
                   </button>

@@ -2,18 +2,20 @@
   <nav class="bg-apple text-white">
     <div class="md:container">
       <div class="md:flex justify-between items-center">
-        <RouterLink to="/" class="block pl-[15px] md:pl-0 py-4"
-          ><img
-            class="w-20"
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
-            alt="logo"
-        /></RouterLink>
+        <h1>
+          <RouterLink to="/" class="block pl-[15px] md:pl-0 py-4"
+            ><img
+              class="w-20"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
+              alt="logo"
+          /></RouterLink>
+        </h1>
         <ul class="menu grid grid-cols-2 md:grid-cols-4 md:gap-x-16">
           <li v-for="item in menuList" :key="item.title">
-            <router-link
+            <RouterLink
               :to="item.url"
               class="block text-lg text-center border border-white md:border-0 py-3 md:py-2 hover:text-apple-light"
-              >{{ item.title }}</router-link
+              >{{ item.title }}</RouterLink
             >
           </li>
         </ul>
