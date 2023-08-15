@@ -15,15 +15,33 @@
         <option value="高雄市" class="">高雄市</option>
       </select>
       <ul class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-y-12">
-        <li class="flex flex-col border border-black/20 cursor-pointer" v-for="item in shopList" :key="item.title" @click="$router.push('/shops/shop-detail')">
+        <li
+          class="flex cursor-pointer flex-col border border-black/20"
+          v-for="item in shopList"
+          :key="item.title"
+          @click="$router.push('/shops/shop-detail')"
+        >
           <img class="block h-56 object-cover" :src="item.imgUrl" :alt="item.title" />
-          <h3 class="py-2 pl-6 text-xl border-b border-black/20">{{ item.title }}</h3>
-          <div class="py-4 px-6">
-            <p class="text-lg"><span class="material-icons-outlined text-lg mr-2 align-bottom"> call </span>電話：{{ item.tel }}</p>
-            <p class="text-lg"><span class="material-icons-outlined text-lg mr-2 align-bottom"> schedule </span>時間：{{ item.time }}</p>
-            <p class="text-lg"><span class="material-icons-outlined text-lg mr-2 align-bottom"> place </span>地址：{{ item.address }}</p>
+          <h3 class="border-b border-black/20 py-2 pl-6 text-xl">{{ item.title }}</h3>
+          <div class="px-6 py-4">
+            <p class="text-lg">
+              <span class="material-icons-outlined mr-2 align-bottom text-lg"> call </span>電話：{{
+                item.tel
+              }}
+            </p>
+            <p class="text-lg">
+              <span class="material-icons-outlined mr-2 align-bottom text-lg"> schedule </span
+              >時間：{{ item.time }}
+            </p>
+            <p class="text-lg">
+              <span class="material-icons-outlined mr-2 align-bottom text-lg"> place </span>地址：{{
+                item.address
+              }}
+            </p>
           </div>
-          <button type="button" class="btn bg-black text-white text-[19px] py-4 hover:opacity-80">詳細資訊</button>
+          <button type="button" class="btn bg-black py-4 text-[19px] text-white hover:opacity-80">
+            詳細資訊
+          </button>
         </li>
       </ul>
     </div>

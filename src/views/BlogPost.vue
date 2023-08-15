@@ -83,7 +83,9 @@
               >TAGS
             </h3>
             <ul class="flex flex-wrap gap-x-4 xl:gap-x-6 xl:gap-y-1 xl:text-xl">
-              <li class="hover:text-apple/70 cursor-pointer" v-for="item in tags" :key="item">{{ item }}</li>
+              <li class="cursor-pointer hover:text-apple/70" v-for="item in tags" :key="item">
+                {{ item }}
+              </li>
             </ul>
           </aside>
         </div>

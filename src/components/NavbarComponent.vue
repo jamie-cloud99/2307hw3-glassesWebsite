@@ -1,9 +1,9 @@
 <template>
   <nav class="bg-apple text-white">
     <div class="md:container">
-      <div class="md:flex justify-between items-center">
+      <div class="items-center justify-between md:flex">
         <h1>
-          <RouterLink to="/" class="block pl-[15px] md:pl-0 py-4"
+          <RouterLink to="/" class="block py-4 pl-[15px] md:pl-0"
             ><img
               class="w-20"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
@@ -14,7 +14,7 @@
           <li v-for="item in menuList" :key="item.title">
             <RouterLink
               :to="item.url"
-              class="block text-lg text-center border border-white md:border-0 py-3 md:py-2 hover:text-apple-light"
+              class="block border border-white py-3 text-center text-lg hover:text-apple-light md:border-0 md:py-2"
               >{{ item.title }}</RouterLink
             >
           </li>
@@ -24,7 +24,6 @@
   </nav>
 </template>
 
-
 <script>
 export default {
   data() {
@@ -32,20 +31,20 @@ export default {
       menuList: [
         {
           title: '系列鏡框',
-          url: '/products',
+          url: '/products'
         },
         {
           title: '門市據點',
-          url: '/shops',
+          url: '/shops'
         },
         {
           title: '部落格',
-          url: '/blog',
+          url: '/blog'
         },
         {
           title: '常見問題',
-          url: '/faq',
-        },
+          url: '/faq'
+        }
       ]
     }
   }

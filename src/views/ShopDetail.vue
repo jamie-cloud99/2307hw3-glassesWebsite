@@ -15,11 +15,11 @@
       </select>
       <div class="mb-6 grid grid-cols-1 gap-6 md:grid-cols-12 xl:mb-0">
         <div class="md:col-span-6 xl:col-span-5">
-          <div class="h-full flex flex-col">
-            <img class="block w-full h-56 object-cover" :src="shop.imgUrl" :alt="shop.title" />
-            <div class="hidden border border-black/20 xl:block xl:w-full flex-grow">
+          <div class="flex h-full flex-col">
+            <img class="block h-56 w-full object-cover" :src="shop.imgUrl" :alt="shop.title" />
+            <div class="hidden flex-grow border border-black/20 xl:block xl:w-full">
               <h3 class="border-b border-black/20 py-2 pl-6 text-xl">{{ shop.title }}</h3>
-              <div class="px-6 py-4 ">
+              <div class="px-6 py-4">
                 <p class="text-lg">
                   <span class="material-icons-outlined mr-2 align-bottom text-lg"> call </span
                   >電話：{{ shop.tel }}

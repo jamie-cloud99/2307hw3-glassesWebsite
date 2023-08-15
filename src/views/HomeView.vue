@@ -113,7 +113,7 @@
               <div class="mb-4">
                 <label for="name" class="mb-2 block">姓名</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:border-apple focus:ring-apple"
                   type="text"
                   id="name"
                   placeholder="陳小明"
@@ -122,7 +122,7 @@
               <div class="mb-4">
                 <label for="phone" class="mb-2 block">聯絡電話</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:border-apple focus:ring-apple"
                   type="tel"
                   id="phone"
                   placeholder="0912-345-678"
@@ -131,7 +131,7 @@
               <div class="mb-4">
                 <label for="email" class="mb-2 block">電子郵件</label>
                 <input
-                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
+                  class="form-input block w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:border-apple focus:ring-apple"
                   type="email"
                   id="email"
                   placeholder="example@email.com"
@@ -140,7 +140,7 @@
               <div class="mb-4">
                 <label for="message" class="mb-2 block">意見反應</label>
                 <textarea
-                  class="form-textarea block h-[136px] w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:ring-apple focus:border-apple"
+                  class="form-textarea block h-[136px] w-full border-black bg-transparent px-3 py-1.5 placeholder:text-[#00000033] focus:border-apple focus:ring-apple"
                   type="text"
                   id="message"
                   placeholder="請輸入您的意見"

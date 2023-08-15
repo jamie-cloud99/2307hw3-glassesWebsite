@@ -5,9 +5,13 @@
       <h2 class="before:title-before relative mb-6 ml-4 text-xl font-bold md:mb-10 md:text-3xl">
         部落格
       </h2>
-      <ul class="space-y-6 mb-16 md:mb-20 xl:mb-[124px]">
-        <li v-for="item in blogList" :key="item.title" @click="$router.push('/blog/post')" class="cursor-pointer">
-          
+      <ul class="mb-16 space-y-6 md:mb-20 xl:mb-[124px]">
+        <li
+          v-for="item in blogList"
+          :key="item.title"
+          @click="$router.push('/blog/post')"
+          class="cursor-pointer"
+        >
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
             <img :src="item.imgUrl" :alt="item.title" />
             <div class="flex flex-col justify-between">
@@ -23,7 +27,11 @@
                 </p>
               </div>
 
-              <p class="hidden text-end text-2xl font-black text-apple-dark xl:block hover:text-apple">more</p>
+              <p
+                class="hidden text-end text-2xl font-black text-apple-dark hover:text-apple xl:block"
+              >
+                more
+              </p>
             </div>
           </div>
         </li>
@@ -37,7 +45,7 @@
 
 <script>
 import BlogNavbar from '../components/BlogNavbar.vue'
-import PageComponent from '../components/PageComponent.vue';
+import PageComponent from '../components/PageComponent.vue'
 
 export default {
   components: {

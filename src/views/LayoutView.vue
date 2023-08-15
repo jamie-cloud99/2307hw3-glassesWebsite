@@ -8,7 +8,7 @@
 
 <script>
 import NavbarComponent from '../components/NavbarComponent.vue'
-import FooterComponent from '../components/FooterComponent.vue';
+import FooterComponent from '../components/FooterComponent.vue'
 
 export default {
   components: {
